@@ -16,20 +16,20 @@ class Document(ABC): # generic
     @abstractmethod
     def calculate(self): pass
 
-class DocumentPDF: # ISP
+class DocumentPDF(ABC): # ISP
     @abstractmethod
     def load(self): pass
 
     @abstractmethod
     def view(self): pass
 
-class DocumentTXT: 
+class DocumentTXT(ABC): 
     @abstractmethod
     def load(self): pass
     @abstractmethod
     def format(self): pass
 
-class DocumentExcel:
+class DocumentExcel(ABC):
     @abstractmethod
     def load(self): pass
 
